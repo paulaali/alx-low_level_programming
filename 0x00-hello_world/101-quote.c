@@ -1,12 +1,12 @@
-#include <unistd.h>
+#include <stdio.h>
+#include <stdlib.h>
 
-int main() {
-    const char* message = "and that piece of art is useful\" - Dora Korpar, 2015-10-19\n";
-    ssize_t len = sizeof(message) - 1;
-    ssize_t ret = write(2, message, len);
-    if (ret != len) {
-        return 1;
-    }
-    return 1;
+/**
+ * main - Entry point
+ * Return: 1
+ */
+int main(void)
+{
+	write(1, "and that piece of art is useful\" - Dora Korpar, 2015-10-19\n", 59);
+	return (1);
 }
-
