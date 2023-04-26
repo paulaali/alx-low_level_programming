@@ -1,14 +1,11 @@
 #include "main.h"
-#include <stdio.h>
-
 /**
- * main - check the code
- *
- * Return: Always 0.
+ *add-adds to numbers i and j
+ *@i:number 1
+ *@j:bumber 2
+ *Return: returns i + j
  */
-int main(void)
+int add(int i, int j)
 {
-	int add(int a, int b)
-{
-	return (a + b);
+	return (i + j);
 }
