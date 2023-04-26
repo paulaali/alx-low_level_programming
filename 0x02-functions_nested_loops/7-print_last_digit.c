@@ -2,18 +2,16 @@
 
 /**
  * main - check the code
- *
+ *@n the number
  * Return: Always 0.
  */
-int main(void)
-{
-int r;
+int print_last_digit(int n)
+	int ld = n % 10;
 
-print_last_digit(98);
-print_last_digit(0);
+	if (ld < 0)
+		ld *= -1
 
-r = print_last_digit(-1024);
-_putchar('0' + r);
-_putchar('\n');
-return (0);
+	_putchar(ld + '0');
+
+	return (0);
 }
