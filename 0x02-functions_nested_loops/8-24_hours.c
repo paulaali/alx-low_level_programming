@@ -1,16 +1,15 @@
 #include "main.h"
 
 /**
- * jack_bauer - prints every minute
- * Return: Always 0.
+ * jack_bauer - prints every minutes
  */
 void jack_bauer(void)
 {
 	int H, M;
 
-	for (H = 0; H <= 24; H++)
+	for (H = 0; H <= 23; H++)
 	{
-		for (M = 0; M <= 60; M++)
+		for (M = 0; M <= 59; M++)
 		{
 			_putchar((H / 10) + '0');
 			_putchar((H % 10) + '0');
